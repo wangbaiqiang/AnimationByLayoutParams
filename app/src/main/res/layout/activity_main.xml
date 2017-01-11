@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:discrollve="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wbq.animationbylayoutparams.MainActivity">
+
+    <com.wbq.animationbylayoutparams.DiscrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <com.wbq.animationbylayoutparams.DiscrollLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white"
+                android:textColor="@android:color/black"
+                android:padding="25dp"
+                android:textSize="62sp"
+                android:gravity="center"
+                discrollve:discrollve_alpha="false"
+                android:fontFamily="serif"
+                android:text="i want to be a hero" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="从前不知道永远是什么,直到某天沦陷于你的温柔,人群中只有你最叫我感动,单膝跪地请嫁给我吧!!!"
+                android:textSize="18sp"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_translation="fromLeft" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                discrollve:discrollve_alpha="true"
+                discrollve:discrollve_translation="fromLeft|fromBottom"
+                android:src="@mipmap/ic_launcher" />
+
+
+        </com.wbq.animationbylayoutparams.DiscrollLinearLayout>
+
+
+
+    </com.wbq.animationbylayoutparams.DiscrollView>
+</RelativeLayout>
